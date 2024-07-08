@@ -1,0 +1,99 @@
+/* styles here */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 6px;
+    /* color: red; */
+}
+
+/* Task 3 */
+#headerTop {
+    color: white;
+    padding: 0.5rem; /*8px padding 1/2 the auto font height */
+    background-color: #176bad;
+}
+
+/* Task 4 & 8: targets the divs directly inside #id*/
+#headerTop>div, #headerBottom>div {
+    display: inline-block;
+}
+/* to achieve task 4, you could have also added a class on the divs under #headerTop called .inline-container and styled that */
+
+/* Task 5 */
+#headerTop span {
+    margin-right: 2rem;
+}
+
+/* Task 6: selects 1st element in it's parent*/
+span:nth-of-type(1) {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* applying .logo on the 2nd span could have also worked */
+
+/* Task 7 */
+#headerBottom {
+    border-bottom: 1px solid gray;
+    padding: 0.5rem;
+}
+
+/* Task 9 */
+#compose {
+    color: white; 
+    font-weight: bold;
+    background-color: #176bad;
+    padding: 0.35rem;
+    border-radius: 3px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+/* You could have also made a class for the button */
+
+/* Task 10 */
+#headerBottom>div>button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    margin-right: 1rem;
+    cursor: pointer;
+    /* color: red; */
+}
+
+/* task 11 */
+#headerBottom button.active {
+    font-weight: bolder;
+    border-bottom: 2px solid lightblue;
+}
+
+/* task 12: targets all the divs directly nested inside elements with a class of email*/
+.email div {
+    display: inline-block;
+}
+
+/* task 13 */
+.email {
+    padding: 0.4rem;
+    padding-left: 1rem;
+    border-bottom: 1px solid lightgrey;
+}
+
+/* task 14: target each div inside the element with a class of email */
+.email-name, .email-subject {
+    width: 35%;
+}
+.email-check, .email-date, .email-size {
+    width: 8%;
+}
+
+/*  task 15: targets the 2nd email */
+.email:nth-child(2) {
+    font-weight: bold;
+}
+
+/* #headerBottom>div {
+    display: inline;
+} */
